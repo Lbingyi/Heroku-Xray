@@ -1,12 +1,13 @@
 # 使用Heroku部署高性能代理服务Xray vless
+
+> 提醒： 滥用可能导致账户被BAN！！！ 
+
 ## 概述
 
 用于在 Heroku 上部署 vless+websocket+tls，每次部署自动选择最新的 alpine linux 和 Xray core 。  
 vless 性能更加优秀，占用资源更少。
 
 **Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
-
-在这里感谢bclswl0827提供的v2ray教程。
 
 ## 镜像
 
@@ -32,8 +33,10 @@ vless 性能更加优秀，占用资源更少。
 
 ## 流量中转
 
-可以使用cloudflare的workers来`中转流量`，配置为：  
+<details>
+<summary>可以使用cloudflare的workers来中转流量，配置为：  </summary>
 
+```js
 addEventListener(  
     "fetch",event => {  
         let url=new URL(event.request.url);  
@@ -44,16 +47,15 @@ addEventListener(
         )  
     }  
 )  
-
+```
+</details>
 
 ## 关于CF筛选IP
 
-请参考 https://github.com/badafans/better-cloudflare-ip/tree/20201208
+* 请参考 [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip)
 
 ### 特别感谢 ：
 
 * [bclswl0827](https://github.com/bclswl0827/v2ray-heroku)
 * [yxhit](https://github.com/yxhit)
 * [badafans](https://github.com/badafans/better-cloudflare-ip/tree/20201208)
-
-

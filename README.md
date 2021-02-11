@@ -1,4 +1,4 @@
-# 使用Heroku部署Xray高性能代理服务(vless)
+# 使用Heroku部署Xray高性能代理服务，通过ws传输的 (vmess)等协议
 
 > 提醒： 滥用可能导致账户被BAN！！！ 
 

@@ -50,7 +50,8 @@ addEventListener(
 ```
 </details>
 
-#### OpenWrt优选IP脚本自动更新 
+## OpenWrt优选IP脚本自动更新：
+
 * [CloudflareST](https://github.com/Lbingyi/CloudflareST) `OpenWrt推荐-速度较快`
 * [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate) `OpenWrt推荐`
 
